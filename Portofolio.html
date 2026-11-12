@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portofolio pribadi: biografi, pendidikan, pengalaman kerja, keahlian, multimedia, dan kontak.">
+  <title>Portofolio | Juherdi Wahyudi</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body id="atas">
+  <input type="checkbox" id="tema" class="sr" aria-label="Aktifkan tema gelap">
+
+  <!-- ================= HEADER & NAVIGASI ================= -->
+  <header class="navbar">
+    <input type="checkbox" id="menu" class="sr" aria-label="Buka menu navigasi">
+
+    <a href="#beranda" class="logo">Juherdi<span>Wahyudi</span></a>
+
+    <nav aria-label="Navigasi utama">
+      <ul>
+        <li><a href="#beranda">Beranda</a></li>
+        <li><a href="#biografi">Biografi</a></li>
+        <li><a href="#keahlian">Keahlian</a></li>
+        <li><a href="#riwayat">Riwayat</a></li>
+        <li><a href="#multimedia">Multimedia</a></li>
+        <li><a href="#kontak">Kontak</a></li>
+      </ul>
+    </nav>
+
+    <label for="tema" class="theme-toggle" title="Ganti tema"></label>
+
+    <label for="menu" class="burger" title="Menu">
+      <span></span><span></span><span></span>
+    </label>
+  </header>
+
+  <main>
+
+    <!-- ================= HERO PANEL ================= -->
+    <section id="beranda" class="hero" aria-labelledby="judul-hero">
+      <div class="hero-text reveal">
+        <p class="greeting">Halo, saya</p>
+        <h1 id="judul-hero">Juherdi Wahyudi</h1>
+        <p class="role">Saya seorang <span class="typing">Web Developer</span></p>
+        <p class="hero-desc">
+          Mahasiswa Teknik Informatika yang suka membuat website. Di halaman ini
+          Anda bisa melihat profil, pendidikan, pengalaman, dan cara menghubungi saya.
+        </p>
+        <div class="hero-buttons">
+          <a href="#kontak" class="btn btn-primary">Hubungi Saya</a>
+          <a href="#riwayat" class="btn btn-outline">Lihat Riwayat</a>
+        </div>
+      </div>
+
+      <figure class="hero-photo reveal">
+        <!-- Ganti dengan foto Anda: <img src="foto.jpg" alt="Foto profil Nama Anda"> -->
+        <img src="Profil.png"
+          <defs>
+            <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+              <stop offset="0" stop-color="#6c63ff"/>
+              <stop offset="1" stop-color="#00c2a8"/>
+            </linearGradient>
+          </defs>
+          <rect width="200" height="200" fill="url(#g)"/>
+          <circle cx="100" cy="78" r="36" fill="#fff" opacity=".92"/>
+          <path d="M30 200c0-44 31-72 70-72s70 28 70 72z" fill="#fff" opacity=".92"/>
+        </svg>
+        <figcaption>Foto Profil</figcaption>
+      </figure>
+    </section>
+
+    <!-- ================= BIOGRAFI & PROFIL UTAMA ================= -->
+    <section id="biografi" class="section" aria-labelledby="judul-bio">
+      <h2 class="section-title reveal" id="judul-bio">Biografi</h2>
+
+      <div class="bio-grid">
+        <article class="card reveal">
+          <h3>Tentang Saya</h3>
+          <p>
+            Sejak kecil saya suka penasaran dengan cara kerja sesuatu. Rasa
+            penasaran itu yang akhirnya membawa saya ke dunia pemrograman,
+            terutama pembuatan website.
+          </p>
+          <p>
+            Sekarang saya masih terus belajar. Saya senang mengerjakan proyek
+            bersama teman, dan saya ingin setiap halaman yang saya buat nyaman
+            dipakai orang lain.
+          </p>
+
+          <details>
+            <summary>Baca selengkapnya</summary>
+            <p>
+              Di luar kuliah, saya mengisi waktu dengan membuat proyek kecil,
+              membaca dokumentasi, dan belajar desain antarmuka. Target saya
+              ke depan adalah menjadi pengembang web profesional.
+            </p>
+          </details>
+        </article>
+
+        <aside class="card reveal" aria-label="Data pribadi">
+          <h3>Data Pribadi</h3>
+          <dl class="data-list">
+            <dt>Nama</dt><dd>Juherdi Wahyudi</dd>
+            <dt>Tempat, Tgl Lahir</dt><dd>Bekasi, 7 Juli 2006</dd>
+            <dt>Domisili</dt><dd>Jawa Barat, Indonesia</dd>
+            <dt>Email</dt><dd>jhrdiwhydi@email.com</dd>
+            <dt>Minat</dt><dd>Web Development, UI/UX, Fotografi</dd>
+          </dl>
+        </aside>
+      </div>
+    </section>
+
+    <!-- ================= RIWAYAT KEAHLIAN (UL) ================= -->
+    <section id="keahlian" class="section alt" aria-labelledby="judul-skill">
+      <h2 class="section-title reveal" id="judul-skill">Riwayat Keahlian</h2>
+
+      <h3 class="list-title reveal">Keahlian Teknis</h3>
+      <ul class="skills">
+        <li class="skill reveal" style="--level: 90%">
+          <div class="skill-head"><span>HTML5</span><span>90%</span></div>
+          <div class="bar"><div class="bar-fill"></div></div>
+        </li>
+        <li class="skill reveal" style="--level: 85%">
+          <div class="skill-head"><span>CSS3</span><span>85%</span></div>
+          <div class="bar"><div class="bar-fill"></div></div>
+        </li>
+        <li class="skill reveal" style="--level: 70%">
+          <div class="skill-head"><span>JavaScript</span><span>70%</span></div>
+          <div class="bar"><div class="bar-fill"></div></div>
+        </li>
+        <li class="skill reveal" style="--level: 75%">
+          <div class="skill-head"><span>Desain UI/UX</span><span>75%</span></div>
+          <div class="bar"><div class="bar-fill"></div></div>
+        </li>
+      </ul>
+
+      <h3 class="list-title reveal">Keahlian Non-Teknis</h3>
+      <ul class="chips reveal">
+        <li>Kerja sama tim</li>
+        <li>Komunikasi</li>
+        <li>Manajemen waktu</li>
+        <li>Pemecahan masalah</li>
+        <li>Cepat belajar</li>
+      </ul>
+    </section>
+
+    <!-- ================= TABEL RIWAYAT ================= -->
+    <section id="riwayat" class="section" aria-labelledby="judul-riwayat">
+      <h2 class="section-title reveal" id="judul-riwayat">Riwayat Pendidikan &amp; Pengalaman Kerja</h2>
+
+      <h3 class="sub-title reveal">Riwayat Pendidikan</h3>
+      <div class="table-wrap reveal">
+        <table>
+          <caption>Tabel riwayat pendidikan</caption>
+          <thead>
+            <tr>
+              <th scope="col">No</th>
+              <th scope="col">Jenjang</th>
+              <th scope="col">Institusi</th>
+              <th scope="col">Jurusan</th>
+              <th scope="col">Tahun</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td data-label="No">3</td>
+              <td data-label="Jenjang">SMA</td>
+              <td data-label="Institusi">SMA Negeri 1 Sukatani</td>
+              <td data-label="Jurusan">IPA</td>
+              <td data-label="Tahun">2018 – 2021</td>
+            </tr>
+            <tr>
+              <td data-label="No">4</td>
+              <td data-label="Jenjang">S1</td>
+              <td data-label="Institusi">Universitas Contoh</td>
+              <td data-label="Jurusan">Teknik Informatika</td>
+              <td data-label="Tahun">2021 – Sekarang</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h3 class="sub-title reveal">Riwayat Pengalaman Kerja</h3>
+      <div class="table-wrap reveal">
+        <table>
+          <caption>Tabel riwayat pengalaman kerja</caption>
+          <thead>
+            <tr>
+              <th scope="col">No</th>
+              <th scope="col">Posisi</th>
+              <th scope="col">Perusahaan</th>
+              <th scope="col">Periode</th>
+              <th scope="col">Deskripsi</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td data-label="No">1</td>
+              <td data-label="Posisi">Admin Produksi</td>
+              <td data-label="Perusahaan">PT chandra Nugera Cipta</td>
+              <td data-label="Periode">Jan 2025 – Jan 2027</td>
+              <td data-label="Deskripsi">Memastikan Produksi berjalan dengan lanacar.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- ================= MULTIMEDIA ================= -->
+    <section id="multimedia" class="section alt" aria-labelledby="judul-media">
+      <h2 class="section-title reveal" id="judul-media">Multimedia</h2>
+      <p class="section-sub reveal">Video perkenalan, audio, dan galeri karya. Ganti sumber file dengan milik Anda sendiri.</p>
+
+      <div class="media-grid">
+        <figure class="card reveal">
+          <video controls preload="metadata">
+            <source src="Perkenalan Singkat.mp4" type="video/mp4">
+            Browser Anda tidak mendukung elemen video.
+          </video>
+          <figcaption>Video perkenalan diri</figcaption>
+        </figure>
+      </div>
+
+    <!-- ================= KONTAK / PESAN ================= -->
+    <section id="kontak" class="section" aria-labelledby="judul-kontak">
+      <h2 class="section-title reveal" id="judul-kontak">Kontak &amp; Pesan</h2>
+
+      <div class="contact-grid">
+        <div class="card reveal">
+          <h3>Kontak Saya</h3>
+          <address>
+            <ul class="contact-list">
+              <li>📧 jhrdiwhydi@email.com</li>
+              <li>📱 +62 856-9351-1834</li>
+              <li>📍 Jawa Barat, Indonesia</li>
+            </ul>
+          </address>
+        </div>
+
+        <!-- Validasi memakai atribut HTML5: required, minlength, type, pattern -->
+        <form class="card reveal" action="mailto:nama@email.com" method="post" enctype="text/plain">
+          <div class="field">
+            <label for="nama">Nama Lengkap <b>*</b></label>
+            <input type="text" id="nama" name="nama" placeholder="Masukkan nama Anda"
+                   autocomplete="name" required minlength="3" maxlength="50"
+                   pattern="[A-Za-z .'\-]{3,50}" title="Gunakan huruf saja, minimal 3 karakter">
+            <small class="error">Nama wajib diisi, hanya huruf, minimal 3 karakter.</small>
+          </div>
+
+          <div class="field">
+            <label for="email">Email <b>*</b></label>
+            <input type="email" id="email" name="email" placeholder="contoh@email.com"
+                   autocomplete="email" required>
+            <small class="error">Masukkan alamat email yang valid.</small>
+          </div>
+
+          <div class="field">
+            <label for="telepon">No. Telepon (opsional)</label>
+            <input type="tel" id="telepon" name="telepon" placeholder="081234567890"
+                   autocomplete="tel" inputmode="numeric"
+                   pattern="(\+62|62|0)8[0-9]{8,12}" title="Contoh: 081234567890">
+            <small class="error">Gunakan nomor Indonesia yang valid, contoh 081234567890.</small>
+          </div>
+
+          <div class="field">
+            <label for="subjek">Subjek <b>*</b></label>
+            <select id="subjek" name="subjek" required>
+              <option value="">-- Pilih subjek --</option>
+              <option value="Kolaborasi">Kolaborasi</option>
+              <option value="Pekerjaan">Tawaran Pekerjaan</option>
+              <option value="Pertanyaan">Pertanyaan</option>
+              <option value="Lainnya">Lainnya</option>
+            </select>
+            <small class="error">Silakan pilih salah satu subjek.</small>
+          </div>
+
+          <div class="field">
+            <label for="pesan">Pesan <b>*</b></label>
+            <textarea id="pesan" name="pesan" rows="5" required minlength="10" maxlength="300"
+                      placeholder="Tulis pesan Anda (10 - 300 karakter)"></textarea>
+            <small class="error">Pesan wajib diisi, minimal 10 karakter.</small>
+          </div>
+
+          <div class="field check">
+            <input type="checkbox" id="setuju" name="setuju" required>
+            <label for="setuju">Saya setuju data ini dipakai untuk membalas pesan.</label>
+            <small class="error">Centang kotak ini untuk melanjutkan.</small>
+          </div>
+
+          <div class="form-buttons">
+            <button type="submit" class="btn btn-primary">Kirim Pesan</button>
+            <button type="reset" class="btn btn-outline">Reset</button>
+          </div>
+        </form>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <p>&copy; 2026 Juherdi Wahyudi. Dibuat dengan HTML5 &amp; CSS3.</p>
+  </footer>
+
+  <a href="#atas" class="to-top" aria-label="Kembali ke atas">↑</a>
+
+</body>
+</html>
